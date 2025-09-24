@@ -1,0 +1,31 @@
+{
+  "name": "@trackloom/utils",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --reporter=dot",
+    "lint": "biome check .",
+    "size": "size-limit"
+  },
+  "size-limit": [
+    {
+      "name": "utils esm",
+      "path": "dist/index.js",
+      "limit": "10 KB",
+      "import": "{ identity }"
+    }
+  ],
+  "devDependencies": {
+    "tsup": "8.5.0",
+    "vitest": "3.2.4",
+    "@vitest/coverage-v8": "3.2.4",
+    "size-limit": "11.2.0",
+    "@size-limit/preset-small-lib": "11.2.0",
+    "typescript": "5.9.2"
+  }
+}

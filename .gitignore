@@ -1,0 +1,15 @@
+# dependencies & build
+node_modules
+dist
+.build
+.turbo
+.pnp.*
+.pnpm-debug.log
+coverage
+
+# env & misc
+.env*
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json

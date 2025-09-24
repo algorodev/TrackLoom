@@ -1,13 +1,33 @@
 {
-  "name": "TrackLoom",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "trackloom",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.15.1"
+  "scripts": {
+    "build": "turbo run build --continue",
+    "test": "turbo run test --continue",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "size": "turbo run size",
+    "changeset": "changeset",
+    "release": "changeset version && pnpm install --no-frozen-lockfile && changeset publish"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "11.2.0",
+    "@types/node": "24.5.2",
+    "@vitest/coverage-v8": "3.2.4",
+    "biome": "0.3.3",
+    "changesets": "1.0.2",
+    "size-limit": "11.2.0",
+    "tsup": "8.5.0",
+    "tsx": "4.20.5",
+    "turbo": "2.5.8",
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
+  }
 }

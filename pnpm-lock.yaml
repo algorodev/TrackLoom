@@ -42,6 +42,52 @@ importers:
         specifier: 3.2.4
         version: 3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5)
 
+  packages/core:
+    dependencies:
+      zod:
+        specifier: 4.1.12
+        version: 4.1.12
+    devDependencies:
+      '@size-limit/preset-small-lib':
+        specifier: 11.2.0
+        version: 11.2.0(size-limit@11.2.0)
+      '@vitest/coverage-v8':
+        specifier: 3.2.4
+        version: 3.2.4(vitest@3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5))
+      size-limit:
+        specifier: 11.2.0
+        version: 11.2.0
+      tsup:
+        specifier: 8.5.0
+        version: 8.5.0(jiti@2.6.0)(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2)
+      typescript:
+        specifier: 5.9.2
+        version: 5.9.2
+      vitest:
+        specifier: 3.2.4
+        version: 3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5)
+
+  packages/utils:
+    devDependencies:
+      '@size-limit/preset-small-lib':
+        specifier: 11.2.0
+        version: 11.2.0(size-limit@11.2.0)
+      '@vitest/coverage-v8':
+        specifier: 3.2.4
+        version: 3.2.4(vitest@3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5))
+      size-limit:
+        specifier: 11.2.0
+        version: 11.2.0
+      tsup:
+        specifier: 8.5.0
+        version: 8.5.0(jiti@2.6.0)(postcss@8.5.6)(tsx@4.20.5)(typescript@5.9.2)
+      typescript:
+        specifier: 5.9.2
+        version: 5.9.2
+      vitest:
+        specifier: 3.2.4
+        version: 3.2.4(@types/node@24.5.2)(jiti@2.6.0)(tsx@4.20.5)
+
 packages:
 
   '@ampproject/remapping@2.3.0':
@@ -1394,6 +1440,9 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
+
 snapshots:
 
   '@ampproject/remapping@2.3.0':
@@ -2666,3 +2715,5 @@ snapshots:
       strip-ansi: 7.1.2
 
   wrappy@1.0.2: {}
+
+  zod@4.1.12: {}

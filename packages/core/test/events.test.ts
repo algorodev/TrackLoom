@@ -33,7 +33,8 @@ describe('Event catalog & typing', () => {
   })
 
   it('track fails for invalid props', () => {
-    const res = track('Product Added', { productId: 'p1', quantity: -2 })
-    void res
+    expect(() => {
+      track('Product Added', { productId: 'p1', quantity: -2 })
+    }).toThrow('Invalid props for "Product Added"')
   })
 })

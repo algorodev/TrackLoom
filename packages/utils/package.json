@@ -16,8 +16,7 @@
     {
       "name": "utils esm",
       "path": "dist/index.js",
-      "limit": "10 KB",
-      "import": "{ identity }"
+      "limit": "10 KB"
     }
   ],
   "devDependencies": {
